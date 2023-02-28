@@ -42,11 +42,8 @@ function SortbyPrediction() {
   const sheet = ss.getSheetByName('production');
   var range = sheet.getRange(2, 1, sheet.getLastRow()-1, 12);
   range.sort({column: 12, ascending: false});
-  range.setNumberFormat('0.00')
-};
-
-function numberFormat() {
-  SpreadsheetApp.getActive().getActiveRange().setNumberFormat("####.00");
+  var colrange = sheet.getRange("L2:L")
+  colrange.setNumberFormat('0.000')
 };
 
 

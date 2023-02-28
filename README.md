@@ -3,8 +3,6 @@
 
 Disclaimer: The context of this project is totally ficticious.
 
-#### This project was made by Breno Teixeira.
-
 
 ## Summary
 
@@ -231,3 +229,6 @@ With the implementation of the model, we reduce costs and increase revenue.
 # 10.0. Google Sheets demonstration
 
 <img src='images/readme/google_sheets_demo.gif'>
+</br><br/>
+
+#### This project was made by Breno Teixeira.
