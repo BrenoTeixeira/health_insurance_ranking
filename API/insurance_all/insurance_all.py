@@ -5,6 +5,19 @@ class InsuranceAll(object):
         new_cols = [col.lower() for col in test.columns.to_list()]
 
         test.columns = new_cols
+        
+        test['id' ] = test['id'].astype('int64')
+        test['gender'] = test['gender'].astype('object')
+        test['age'] = test['age'].astype('int64')
+        test['region_code'] = test['region_code'].astype('float64')
+        test['policy_sales_channel'] = test['policy_sales_channel'].astype('float64')
+        test['previously_insured'] = test['previously_insured'].astype('int64')
+        test['annual_premium'] = test['annual_premium'].astype('float64')
+        test['vintage'] = test['vintage'].astype('int64')
+        test['response'] = test['response'].astype('int64')
+        test['driving_license'] = test['driving_license'].astype('int64')
+        test['vehicle_age'] = test['vehicle_age'].astype('object')
+        test['vehicle_damage'] = test['vehicle_damage'].astype('object')
 
         return test
 

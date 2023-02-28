@@ -20,10 +20,10 @@ Disclaimer: The context of this project is totally ficticious.
     * [5.2. Evaluation Metrics](#52-models-performances---cross-validation)
 * [6.0. Machine Learning Model Performance](#60-machine-learning-model-performance)
 * [7.0. Business Results](#70-business-results)
+    * [7.1. CEO Questions](#71-ceo-questions)
 * [8.0. Conclusions](#80-conclusions)
-* [9.0. Lessons Learned](#90-lessons-learned)
-* [10.0. Next Steps to Improve](#100-next-steps-to-improve)
-* [11.0. Google Sheets demonstration](#110-google-sheets-demonstration)
+* [9.0. Next Steps to Improve](#90-next-steps-to-improve)
+* [10.0. Google Sheets demonstration](#100-google-sheets-demonstration)
 
 # 1.0. Business Problem.
 
@@ -147,8 +147,7 @@ Model|precision_at_20000|recall_at_20000|lift_score
 |**LGBM**|**0.1983 +/- 0.0001**|**0.999 +/- 0.0008**|**2.3005 +/- 0.0262**|
 |ExtraTrees|0.195 +/- 0.0005|	0.9821 +/- 0.0023|2.2376 +/- 0.021|
 |Gaussian|0.1981 +/- 0.0002|	0.9979 +/- 0.0009|2.3082 +/- 0.0309|
-|                                                                  
-
+                                                             
 # 6.0. Machine Learning Model Performance
 
 From the previous results, LGBMClassifier was chosen for hyperparameter fine-tuning. Then we re-trained the model using the train and validation sets and evaluated the model's generalization performance using the test set (previously unseen data).
@@ -187,7 +186,7 @@ In the test set, we have 12.26% of interested customers. We assume the same prop
 
     We expect to reach 15,75% (2453) of the interested customers if we contact 15.75% of the customers randomly.
 
-<img src='images/readme/business_perf_20k.png'/>
+<img src='images/readme/business_perf_20k.PNG'/>
 </br><br/>
 
 The model is 2.66 times better than randomly targeting the customers. We expect 2.66 times more revenue using the model.
@@ -201,7 +200,7 @@ The model is 2.66 times better than randomly targeting the customers. We expect 
 
     We expect to reach 31.50% (4906) of the interested customers if we contact 31.50% of the customers randomly.
 
-<img src='images/readme/business_perf_40k.png'/>
+<img src='images/readme/business_perf_40k.PNG'/>
 </br><br/>
 
 The model is 2.40 times better than randomly targeting the customers. We expect 2.40 times more revenue using the model.
@@ -231,6 +230,4 @@ With the implementation of the model, we reduce costs and increase revenue.
 
 # 10.0. Google Sheets demonstration
 
-
-
-
+<img src='images/readme/google_sheets_demo.gif'>
