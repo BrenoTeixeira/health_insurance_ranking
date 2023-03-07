@@ -1,7 +1,8 @@
 # Cross-Sell Health Insurance Project
 
+<img src='images/readme/cross_sell.png'>
 
-Disclaimer: The context of this project is totally ficticious.
+Disclaimer: The context of this project is totally fictitious.
 
 
 ## Summary
