@@ -23,15 +23,17 @@ def predict():
                 data = pd.DataFrame(json_d, columns=json_d[0].keys())
 
             pipe = InsuranceAll()
-
+            print('ponto 1')
             df1 = pipe.transformation(data)
+            print('ponto 2')
             df2 = pipe.feature_engineering(df1)
-
+            print('ponto 3')
             predictions = model_pipeline.predict_proba(df2)
-
+            print('ponto 4')
             df_preds = pd.concat([df2.reset_index(drop=True), pd.Series(predictions[:, 1])], axis=1)
+            print('ponto 5')
             df_preds = df_preds.rename(columns={0:'proba_predictions'})
-
+            print('ponto 6')
             return json.dumps(df_preds.to_dict(orient='records'))
         
         else:
