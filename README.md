@@ -30,7 +30,7 @@ Insurance All is an insurance company that provides health insurance plans to it
 
 This new vehicle insurance plan will work like the health insurance plan. The customer has to pay an annual premium to Insurance All, and the company covers the expenses in an eventual automobile accident. 
 
-Last year, the company surveyed 380,000 customers about their interest in acquiring the new product — vehicle insurance. The clients had to answer if they were or weren't interested in the vehicle insurance plan. Their answers and [attributes](#21-data-dictionary) were saved in a database.
+Last year, the company surveyed 380,000 customers about their interest in acquiring a new product — vehicle insurance. The clients had to answer if they were or weren't interested in the vehicle insurance plan. Their answers and [attributes](#21-data-dictionary) were saved in a database.
 
 Then, 127,037 new customers, who did not participate in the survey last year, were selected to participate in a campaign in which the company will offer them the vehicle insurance plan. The sales team will do it through phone calls. However, the sales team can only make 20,000 calls in the campaign period.
 
@@ -79,13 +79,13 @@ My strategy to solve this challenge was:
 
 **Step 00. Data Collection:** Collect the data from a Postgres database. Split the data into train and test.
 
-**Step 01. Data Description:** Use descriptive statistics to have an initial comprehension of the data. Check the did mension of the data and inconsistencies - missing values, data types, and duplicates.
+**Step 01. Data Description:** Utilize descriptive statistics to gain an initial understanding of the dataset. Check the dimension of the data and inconsistencies - missing values, data types, and duplicates.
 
-**Step 02. Feature Engineering:** Create a mind map of Hypothesis, and make transformations in some features.
+**Step 02. Feature Engineering:** Create a mind map of the Hypothesis, and make transformations in some features.
 
 **Step 03. Data Filtering:** This step was not necessary.
 
-**Step 04. Exploratory Data Analysis:** Univariate analysis of each variable with respect to the target variable. Bivariate analysis (Numerical x Numerical, Numerical x Cetegorical and Categorical x Categorial) in relation to the target variable. Multivariate analysis and hypothesis validation.
+**Step 04. Exploratory Data Analysis:** Univariate analysis of each variable with respect to the target variable. Bivariate analysis (Numerical x Numerical, Numerical x Categorical and Categorical x Categorial) in relation to the target variable. Multivariate analysis and hypothesis validation.
 
 **Step 05. Data Preparation:** Defining the encoding methods for categorical variables and scaling methods for numerical variables.
 
@@ -128,7 +128,7 @@ For this project, we tested different models:
 
 ## 5.1. Evaluation Metrics
 
-To evaluate the models, the following metrics were used: precision_at_20000, recall_at_20000, and lift_score.
+The following metrics were used to evaluate the models: precision_at_20000, recall_at_20000, and lift_score.
 
 precision_at_20000: this metric tells us, in a list ordered by the score given by the model,  the percentage of interested customers in the first 20,000 (k) elements of the list.
 
@@ -149,7 +149,7 @@ Model|precision_at_20000|recall_at_20000|lift_score
                                                              
 # 6.0. Machine Learning Model Performance
 
-From the previous results, LGBMClassifier was chosen for hyperparameter fine-tuning. Then we re-trained the model using the train and validation sets and evaluated the model's generalization performance using the test set (previously unseen data).
+From the previous results, the LGBMClassifier was chosen for hyperparameter fine-tuning. Then we re-trained the model using the train and validation sets and evaluated the model's generalization performance using the test set (previously unseen data).
 </br><br/>
 
 Model|precision_at_20000|recall_at_20000|lift_score
@@ -162,14 +162,14 @@ LGBM Tuned|0.286636|0.818182|2.052952
 **Cumulative Gain Curve**
 
 <img src='images/readme/cumulative_gain.png'/>
-The curve above tells us that if we are able contact 40% of the population (sorted by the propensity score), we can reach 90% of the customers that are interested in vehicle insurance.
+The curve above tells us that if we can contact 40% of the population (sorted by the propensity score), we can reach 90% of the customers who are interested in vehicle insurance.
 </br><br/>
 
 **Lift Curve**
 
 <img src='images/readme/lift_curve.png'/>
 
-In the curve above, for 20% of our sorted data, we have a lift of almost 3. This means that: if we contact the top 20% of customers, we can expect to reach three times more interested customers than we would by contacting the same number of customers randomly.
+In the curve above, for 20% of our sorted data, we have a lift of almost 3. This means that, if we contact the top 20% of customers, we can expect to reach three times more interested customers than we would by contacting the same number of customers randomly.
 </br><br/>
 
 ## 7.1. CEO Questions
@@ -207,7 +207,7 @@ The model is 2.40 times better than randomly targeting the customers. We expect 
 
 ### 4. How many calls does the sales team need to make to contact 80% of the customers interested in acquiring vehicle insurance?
 
-    The sales team need to make 43,107 calls to reach 80% of the customers interested in acquiring vehicle insurance.
+    The sales team needs to make 43,107 calls to reach 80% of the customers interested in acquiring vehicle insurance.
 
 <img src='images/readme/cumulative_gains_business_80p.png'/>
 
@@ -215,7 +215,7 @@ The model is 2.40 times better than randomly targeting the customers. We expect 
 
 # 8.0. Conclusions
 
-We can say that the goals of the project were accomplished.
+The goals of the project were accomplished.
 The company can prioritize the customers with higher probabilities of acquiring vehicle insurance with the solution developed in this project. This means that better results can be achieved with fewer resources.
 
 With the implementation of the model, we reduce costs and increase revenue.
@@ -232,4 +232,4 @@ With the implementation of the model, we reduce costs and increase revenue.
 <img src='images/readme/google_sheets_demo2.gif'>
 </br><br/>
 
-#### This project was made by Breno Teixeira.
+#### This project was developed by Breno Teixeira.
