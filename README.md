@@ -224,8 +224,8 @@ Com a implementação do modelo, reduzimos os custos e aumentamos a receita.
 
 # 9.0. Próximos Passos para Melhorar
 
-Criar novos recursos para melhorar o desempenho do modelo.
-Testar diferentes métodos de codificação e escalonamento.
+- Criar novos recursos para melhorar o desempenho do modelo.
+- Testar diferentes métodos de codificação e escalonamento.
 
 # 10.0. Demonstração no Google Sheets
 
