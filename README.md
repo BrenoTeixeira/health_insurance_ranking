@@ -2,7 +2,7 @@
 
 # Projeto de Cross-Sell de Seguro de Veículo
 
-<img src='imagens/readme/cross_sell.png'>
+<img src='images/readme/cross_sell.png'>
 
 Aviso: O contexto deste projeto é totalmente fictício.
 
@@ -74,7 +74,7 @@ Resposta|	1: Cliente está interessado, 0: Cliente não está interessado|
 
 O método CRISP-DM foi utilizado para desenvolver este projeto.
 
-<img src='imagens/readme/crisp.png'/>
+<img src='images/readme/crisp.png'/>
 
 Minha estratégia para resolver este desafio foi:
 
@@ -105,15 +105,15 @@ Minha estratégia para resolver este desafio foi:
 
 **H1:** Pessoas na faixa etária de 40 a 47 anos têm uma maior propensão a adquirir seguro de veículo.
 
-<img src='imagens/idade_cohort.png' /> 
+<img src='images/age_cohort.png' /> 
 
 **H2:** A porcentagem de pessoas interessadas em seguro de veículo é maior entre aqueles com carros mais antigos.
 
-<img src='imagens/idade_veiculo.png' /> 
+<img src='images/vehicle_age.png' /> 
 
 **H3:** Quase ninguém das pessoas que não teve problemas com seu veículo no passado está interessado em seguro de veículo.
 
-<img src='imagens/dano_veiculo.png' /> 
+<img src='images/vehicle_damage.png' /> 
 </br><br/>
 
 # 5.0. Modelo de Aprendizado de Máquina Aplicado
@@ -162,14 +162,13 @@ Modelo|	precision_at_20000|	recall_at_20000	lift_score|
 
 Curva de Ganho Cumulativo
 
-<img src='imagens/readme/ganho_cumulativo.png'/>
-
+<img src='images/readme/cumulative_gain.png'/>
 A curva acima nos diz que se pudermos contatar 40% da população (ordenada pelo score de propensão), podemos alcançar 90% dos clientes que estão interessados em seguro de veículo.
 </br><br/>
 
 Curva de Lift
 
-<img src='imagens/readme/curva_lift.png'/>
+<img src='images/readme/lift_curve.png'/>
 
 Na curva acima, para 20% dos dados ordenados, há um lift de quase 3. Isso significa que, se os 20% principais de clientes forem contatados, espera-se alcançar três vezes mais clientes interessados do que seria alcançado contatando o mesmo número de clientes aleatoriamente.
 </br><br/>
@@ -183,11 +182,11 @@ No conjunto de teste, há 12,26% de clientes interessados. A mesma proporção �
 
 Com 20.000 chamadas, é possível contatar 15,75% dos 127.037 clientes — ordenados pelo score do modelo — que não participaram da pesquisa. Então, espera-se alcançar 42% (6.541) dos clientes interessados em seguro de veículo.
 
-<img src='imagens/readme/ganho_cumulativo_negocio.png'/>
+<img src='images/readme/cumulative_gains_business.png'/>
 
 Espera-se alcançar 15,75% (2453) dos clientes interessados se 15,75% dos clientes oram contatados aleatoriamente.
 
-<img src='imagens/readme/desempenho_negocio_20k.PNG'/>
+<img src='images/readme/business_perf_20k.PNG'/>
 </br><br/>
 
 O modelo é 2,66 vezes melhor do que abordar os clientes de forma aleatória. Espera-se 2,66 vezes mais receita usando o modelo.
@@ -197,11 +196,11 @@ O modelo é 2,66 vezes melhor do que abordar os clientes de forma aleatória. Es
 
 Com 40.000 chamadas, é possível contatar 31,50% dos 127.037 clientes. Então, espera-se alcançar 75,70% (11.790) dos clientes interessados em seguro de veículo.
 
-<img src='imagens/readme/ganho_cumulativo_negocio_40.png'/>
+<img src='images/readme/cumulative_gains_business_40.png'/>
 
 Espera-se alcançar 31,50% (4906) dos clientes interessados se 31,50% dos clientes oram contatados aleatoriamente.
 
-<img src='imagens/readme/desempenho_negocio_40k.PNG'/>
+<img src='images/readme/business_perf_40k.PNG'/>
 </br><br/>
 
 O modelo é 2,40 vezes melhor do que abordar os clientes de forma aleatória. Espera-se 2,40 vezes mais receita usando o modelo.
@@ -211,7 +210,7 @@ O modelo é 2,40 vezes melhor do que abordar os clientes de forma aleatória. Es
 
 A equipe de vendas precisa fazer 43.107 chamadas para alcançar 80% dos clientes interessados em adquirir seguro de veículo.
 
-<img src='imagens/readme/ganho_cumulativo_negocio_80p.png'/>
+<img src='images/readme/cumulative_gains_business_80p.png'/>
 
 Aleatoriamente, seriam necessárias 101.630 chamadas para alcançar 80% dos clientes interessados.
 
@@ -230,7 +229,7 @@ Testar diferentes métodos de codificação e escalonamento.
 
 # 10.0. Demonstração no Google Sheets
 
-<img src='imagens/readme/google_sheets_demo2.gif'>
+<img src='images/readme/google_sheets_demo2.gif'>
 </br><br/>
 
 #### Este projeto foi desenvolvido por Breno Teixeira.
