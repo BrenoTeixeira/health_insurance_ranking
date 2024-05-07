@@ -1,4 +1,4 @@
-[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)]([README.md](https://github.com/BrenoTeixeira/health_insurance_ranking/tree/main))
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/BrenoTeixeira/health_insurance_ranking/tree/main)
 
 # Cross-Sell Vehicle Insurance Project
 
