@@ -1,6 +1,6 @@
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](README.en.md)
 
-# Projeto de Cross-Sell de Seguro de Saúde
+# Projeto de Cross-Sell de Seguro de Veículo
 
 <img src='imagens/readme/cross_sell.png'>
 
