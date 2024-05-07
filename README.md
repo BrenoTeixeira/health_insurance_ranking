@@ -1,3 +1,5 @@
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](README.md)
+
 # Cross-Sell Health Insurance Project
 
 <img src='images/readme/cross_sell.png'>
@@ -64,7 +66,7 @@ Vehicle_Age|	Age of the Vehicle
 Vehicle_Damage|	1 : Customer got his/her vehicle damaged in the past. 0 : Customer didn't get his/her vehicle damaged in the past.
 Annual_Premium|	The amount customer needs to pay as premium in the year
 PolicySalesChannel|	Anonymized Code for the channel of outreaching to the customer ie. Different Agents, Over Mail, Over Phone, In Person, etc.
-Vintage|	Number of Days, Customer has been associated with the company
+Vintage|	Number of Days the customer has been associated with the company
 Response|	1 : Customer is interested, 0 : Customer is not interested
 </br><br/>
 
@@ -106,7 +108,7 @@ My strategy to solve this challenge was:
 
 <img src='images/age_cohort.png' /> 
 
-**H2:** The percentage of people interested in vehicle insurance is higher for those with older cars.
+**H2:** The percentage of people interested in vehicle insurance is higher among those with older cars.
 
 <img src='images/vehicle_age.png' /> 
 
@@ -117,7 +119,7 @@ My strategy to solve this challenge was:
 
 # 5.0. Machine Learning Model Applied
 
-For this project, we tested different models:
+For this project, different models were tested:
 
 - Logistic Regression
 - K-Nearest Neighbors
@@ -130,9 +132,9 @@ For this project, we tested different models:
 
 The following metrics were used to evaluate the models: precision_at_20000, recall_at_20000, and lift_score.
 
-precision_at_20000: this metric tells us, in a list ordered by the score given by the model,  the percentage of interested customers in the first 20,000 (k) elements of the list.
+precision_at_20000: this metric tells, in a list ordered by the score given by the model,  the percentage of interested customers in the first 20,000 (k) elements of the list.
 
-recall_at_20000: this metric tells us, of all interested customers, what percentage is in the first 20,000 elements of a list sorted by the score given by the model.
+recall_at_20000: this metric tells, of all interested customers, what percentage is in the first 20,000 elements of a list sorted by the score given by the model.
 
 lift_score: measures how much better the model is compared to a random model. In our case, it tells us that we can expect to catch N(lift) times more interested customers using the model than we would by randomly targeting the same number of customers.
 </br><br/>
@@ -169,15 +171,15 @@ The curve above tells us that if we can contact 40% of the population (sorted by
 
 <img src='images/readme/lift_curve.png'/>
 
-In the curve above, for 20% of our sorted data, we have a lift of almost 3. This means that, if we contact the top 20% of customers, we can expect to reach three times more interested customers than we would by contacting the same number of customers randomly.
+In the curve above, for 20% of the sorted data, we have a lift of almost 3. This means that, if we contact the top 20% of customers, we can expect to reach three times more interested customers than we would by contacting the same number of customers randomly.
 </br><br/>
 
 ## 7.1. CEO Questions
 
-In the test set, we have 12.26% of interested customers. We assume the same proportion for the new clients (127,037) to answer the following questions.
+In the test set, we have 12.26% of interested customers. We assume the same proportion for the new clients (127,037) to answer the following questions:
 </br><br/>
 
-### 2. What is the percentage of clients interested in vehicle insurance that the sales team will be able to contact by making 20,000 calls?
+### 1. What is the percentage of clients interested in vehicle insurance that the sales team will be able to contact by making 20,000 calls?
 
     With 20,000 calls, we can contact 15.75% of the 127,037 customers — ordered by the model's score — who did not participate in the survey. Then, we expect to reach 42% (6,541) of the customers interested in vehicle insurance.
 
