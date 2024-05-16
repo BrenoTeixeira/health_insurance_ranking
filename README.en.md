@@ -6,7 +6,6 @@
 
 Disclaimer: The context of this project is totally fictitious.
 
-
 ## Summary
 
 * [1.0. Business Problem](#1-business-problem)
