@@ -111,7 +111,7 @@ Minha estratégia para resolver este desafio foi:
 
 <img src='images/vehicle_age.png' /> 
 
-**H3:** Quase ninguém das pessoas que não teve problemas com seu veículo no passado está interessado em seguro de veículo.
+**H3:** Quase ninguém das pessoas que não tiveram problemas com seu veículo no passado está interessado em seguro de veículo.
 
 <img src='images/vehicle_damage.png' /> 
 </br><br/>
